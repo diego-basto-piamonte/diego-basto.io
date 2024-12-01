@@ -2,10 +2,13 @@ import Image from "next/image";
 import { ArrowDownRight, FileDown, Link } from "lucide-react";
 import Socials from "@/components/socials";
 import Resume from "@/components/resume";
+import Timeline from "@/components/timeline";
+import experienceData from "@/data/experience.json";
 
 export default function Home() {
   return (
-    <article className="mt-8 flex flex-col gap-16 pb-16">
+    <article className="mt-8 flex flex-col gap-8 pb-8">
+      {/* Introduction */}
       <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col flex-1">
             <h1 className="title">Diego Basto Piamonte 🚀</h1>
@@ -27,7 +30,7 @@ export default function Home() {
               teams to product success.
             </p>
             <div className="mt-4 flex items-end gap-1">
-              <p className="font-semibold">Ask Baby Jaguar 🐆 anything about me</p>
+              <p className="font-semibold">Ask my chatbot anything about me (coming soon!)</p>
               <ArrowDownRight className="size-5 animate-bounce" />
             </div>
             <section className="mt-8 flex items-center gap-8">
@@ -41,7 +44,14 @@ export default function Home() {
                 <figcaption className="mt-2 text-sm text-center font-extralight">Diego in Japan</figcaption>
               </figure>
           </div>
+      </section>
 
+      {/* Experience */}
+      <section className="flex flex-col gap-8">
+        <div className="section-title">Experience</div> 
+        <div className="items-start md:flex-row md:items-start md:justify-between">
+          <Timeline experiences={experienceData} />
+        </div>
       </section>
     </article>
   );

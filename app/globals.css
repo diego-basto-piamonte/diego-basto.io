@@ -89,6 +89,11 @@
   .title {
     @apply font-semibold text-4xl tracking-wide decoration-border/75 decoration-2;
   }
+
+  .section-title {
+    @apply font-semibold text-3xl w-full;
+  }
+
   .link {
     @apply text-muted-foreground transition-colors hover:text-foreground;
   }

@@ -1,0 +1,58 @@
+[
+    {
+      "institution": "University of Melbourne",
+      "href": "",
+      "degree": "Bachelor of Science (BSc)",
+      "major": "Computing and Software Systems",
+      "logo": "",
+      "start": "Mar 2018",
+      "end": "Dec 2020",
+      "description": [
+        "Achieved a WAM of 84.3 (First Class Honours).",
+        "Recipient of the Melbourne National Merit Scholarship 2018."
+      ],
+      "links": [
+        {
+          "name": "University of Melbourne",
+          "href": "https://www.unimelb.edu.au/",
+          "icon": "fas fa-external-link-alt"
+        }
+      ]
+    },
+    {
+      "institution": "Stanford University",
+      "href": "",
+      "degree": "Professional Certificate",
+      "major": "Product Management Accelerated",
+      "logo": "",
+      "start": "2024-04-01",
+      "end": "2024-07-01",
+      "description": [],
+      "links": []
+    },
+    {
+      "institution": "MIT xPRO",
+      "href": "",
+      "degree": "Professional Certificate",
+      "major": "Designing and Building AI Products and Services",
+      "logo": "",
+      "start": "2024-07-01",
+      "end": "2024-08-01",
+      "description": [],
+      "links": []
+    },
+    {
+      "institution": "Aquinas College",
+      "href": "",
+      "degree": "Western Australia Certificate of Education (WACE)",
+      "major": "",
+      "logo": "",
+      "start": null,
+      "end": "2017-12-01",
+      "description": [
+        "Achieved an ATAR of 99.80."
+      ],
+      "links": []
+    }
+  ]
+  

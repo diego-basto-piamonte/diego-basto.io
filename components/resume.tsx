@@ -1,11 +1,5 @@
 import { FileDownIcon, Link } from "lucide-react";
 import { Button } from "./ui/button";
-import { downloadPDF } from "@/lib/utils";
-
-const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    downloadPDF("/resume.pdf", "_blank");
-}
 
 export default function Resume() {
     return (
