@@ -1,33 +1,34 @@
 import Image from "next/image";
-import { ArrowDownRight, FileDown, Link } from "lucide-react";
+import { ArrowDownRight } from "lucide-react";
 import Socials from "@/components/socials";
 import Resume from "@/components/resume";
 import Timeline from "@/components/timeline";
 import experienceData from "@/data/experience.json";
+import educationData from "@/data/education.json";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Typewriter from "@/components/typewriter";
 
 export default function Home() {
   return (
-    <article className="mt-8 flex flex-col gap-8 pb-8">
+    <article className="mt-8 flex flex-col gap-8 pb-8 w-100">
       {/* Introduction */}
       <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col flex-1">
             <h1 className="title">Diego Basto Piamonte 🚀</h1>
             <h2 className="mt-4 h2 text-2xl">
-            Product Manager
-            {/* <Typewriter
-              options={{
-                strings: ['Hello', 'World'],
-                autoStart: true,
-                loop: true,
-              }}
-            /> */}
-            
+            <Typewriter 
+              texts={['Consultant', 'Software Engineer', 'Product Manager', 'Data Analyst']}
+              typingSpeed={75}
+              pauseTime={2500} 
+            />
             </h2>
             <p className="mt-4 font-light">
-              24-year-old tech enthusiast from Australia 🇦🇺 with 4+ years experience in product consulting, 
-              specialised in delivering high-value digital products to clients. Adept at bridging the gap
-              between technical complexities and strategic objectives to successfully lead cross-functional
-              teams to product success.
+              24-year-old tech enthusiast from Australia 🇦🇺 with 4+ years experience in consulting, 
+              specialised in delivering high-value digital products to clients.
+            </p>
+            <p className="mt-4 font-light">
+            Adept at bridging the gap between technical complexities and strategic objectives 
+            to successfully lead cross-functional teams to product success.
             </p>
             <div className="mt-4 flex items-end gap-1">
               <p className="font-semibold">Ask my chatbot anything about me (coming soon!)</p>
@@ -46,13 +47,33 @@ export default function Home() {
           </div>
       </section>
 
-      {/* Experience */}
-      <section className="flex flex-col gap-8">
+      {/* <section className="flex flex-col gap-8">
         <div className="section-title">Experience</div> 
         <div className="items-start md:flex-row md:items-start md:justify-between">
           <Timeline experiences={experienceData} />
         </div>
       </section>
+
+      <section className="flex flex-col gap-8">
+        <div className="section-title">Education</div> 
+        <div className="items-start md:flex-row md:items-start md:justify-between">
+          <Timeline experiences={educationData} />
+        </div>
+      </section> */}
+
+      <Tabs defaultValue="account" className="flex flex-col gap-0">
+        <TabsList>
+          <TabsTrigger value="account" className="w-full">Experience</TabsTrigger>
+          <TabsTrigger value="password" className="w-full">Education</TabsTrigger>
+        </TabsList>
+        <TabsContent value="account">
+            <Timeline experiences={experienceData}/>
+        </TabsContent>
+        <TabsContent value="password">
+          <Timeline experiences={educationData} />
+        </TabsContent>
+      </Tabs>
+
     </article>
   );
 }

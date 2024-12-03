@@ -1,4 +1,4 @@
-import { FileDownIcon, Link } from "lucide-react";
+import { FileDownIcon } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Resume() {

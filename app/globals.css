@@ -77,6 +77,13 @@
   .font-family {
     font-family: var(--font-geist-sans);
   }
+
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    animation: blink 0.7s steps(1) infinite;
+  }
 }
 
 @layer base {
@@ -91,11 +98,17 @@
   }
 
   .section-title {
-    @apply font-semibold text-3xl w-full;
+    @apply font-semibold text-2xl w-full;
   }
 
   .link {
     @apply text-muted-foreground transition-colors hover:text-foreground;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 

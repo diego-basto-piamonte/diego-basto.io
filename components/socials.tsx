@@ -1,5 +1,3 @@
-import dynamicIconImports from "lucide-react/dynamicIconImports";
-import Icon from "./icon";
 import { Linkedin, Github, Mail } from "lucide-react";
 
 const socials = [
@@ -30,7 +28,7 @@ export default function Socials(){
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2"
+                    className="text-muted-foreground hover:text-foreground"
                 >
                     <social.icon aria-hidden="true" className="size-5"/>
                 </a>
