@@ -1,23 +1,5 @@
 [
-    {
-      "name": "University of Melbourne",
-      "href": "https://www.unimelb.edu.au/",
-      "title": "Bachelor of Science (BSc), Computing and Software Systems",
-      "logo": "./uom-2.png",
-      "start": "Mar 2018",
-      "end": "Dec 2020",
-      "description": [
-        "Achieved a WAM of 84.3 (First Class Honours).",
-        "Recipient of the Melbourne National Merit Scholarship 2018."
-      ],
-      "links": [
-        {
-          "name": "Transcript",
-          "href": "./academic-transcript.pdf",
-          "icon": "fas fa-external-link-alt"
-        }
-      ]
-    },
+    
     {
       "name": "Stanford University",
       "href": "https://online.stanford.edu/courses/xprod300-product-management-accelerated",
@@ -52,6 +34,25 @@
         {
           "name": "Certificate",
           "href": "https://certificates.emeritus.org/97667966-62f5-4301-a54d-ccf512357104#acc.QUTGdC6k",
+          "icon": "fas fa-external-link-alt"
+        }
+      ]
+    },
+    {
+      "name": "University of Melbourne",
+      "href": "https://www.unimelb.edu.au/",
+      "title": "Bachelor of Science (BSc), Computing and Software Systems",
+      "logo": "./uom-2.png",
+      "start": "Mar 2018",
+      "end": "Dec 2020",
+      "description": [
+        "Achieved a WAM of 84.3 (First Class Honours).",
+        "Recipient of the Melbourne National Merit Scholarship 2018."
+      ],
+      "links": [
+        {
+          "name": "Transcript",
+          "href": "./academic-transcript.pdf",
           "icon": "fas fa-external-link-alt"
         }
       ]
