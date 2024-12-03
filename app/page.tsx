@@ -9,45 +9,45 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Typewriter from "@/components/typewriter";
 
 export default function Home() {
-  return (
-    <article className="mt-8 flex flex-col gap-8 pb-8 w-100">
-      {/* Introduction */}
-      <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
-        <div className="flex flex-col flex-1">
-            <h1 className="title">Diego Basto Piamonte 🚀</h1>
-            <h2 className="mt-4 h2 text-2xl">
-            <Typewriter 
-              texts={['Consultant', 'Software Engineer', 'Product Manager', 'Data Analyst']}
-              typingSpeed={75}
-              pauseTime={2500} 
-            />
-            </h2>
-            <p className="mt-4 font-light">
-              24-year-old tech enthusiast from Australia 🇦🇺 with 4+ years experience in consulting, 
-              specialised in delivering high-value digital products to clients.
-            </p>
-            <p className="mt-4 font-light">
-            Adept at bridging the gap between technical complexities and strategic objectives 
-            to successfully lead cross-functional teams to product success.
-            </p>
-            <div className="mt-4 flex items-end gap-1">
-              <p className="font-semibold">Ask my chatbot anything about me (coming soon!)</p>
-              <ArrowDownRight className="size-5 animate-bounce" />
-            </div>
-            <section className="mt-8 flex items-center gap-8">
-              <Resume />
-              <Socials />
+    return (
+        <article className="mt-8 flex flex-col gap-8 pb-8 w-100">
+            {/* Introduction */}
+            <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+                <div className="flex flex-col flex-1">
+                    <h1 className="title">Diego Basto Piamonte 🚀</h1>
+                    <h2 className="mt-4 h2 text-2xl">
+                        <Typewriter
+                            texts={['Consultant', 'Software Engineer', 'Product Manager', 'Data Analyst']}
+                            typingSpeed={75}
+                            pauseTime={2500}
+                        />
+                    </h2>
+                    <p className="mt-4 font-light">
+                        24-year-old tech enthusiast from Australia 🇦🇺 with 4+ years experience in consulting,
+                        specialised in delivering high-value digital products to clients.
+                    </p>
+                    <p className="mt-4 font-light">
+                        Adept at bridging the gap between technical complexities and strategic objectives
+                        to successfully lead cross-functional teams to product success.
+                    </p>
+                    <div className="mt-4 flex items-end gap-1">
+                        <p className="font-semibold">Ask my chatbot anything about me (coming soon!)</p>
+                        <ArrowDownRight className="size-5 animate-bounce" />
+                    </div>
+                    <section className="mt-8 flex items-center gap-8">
+                        <Resume />
+                        <Socials />
+                    </section>
+                </div>
+                <div className="flex flex-col">
+                    <figure className="max-w-lg">
+                        <Image className="h-auto max-w-full rounded-lg" src="/diego-in-japan.jpeg" width={200} height={200} alt="image description" />
+                        <figcaption className="mt-2 text-sm text-center font-extralight">Diego in Japan</figcaption>
+                    </figure>
+                </div>
             </section>
-          </div>
-          <div className="flex flex-col">
-              <figure className="max-w-lg">
-                <Image className="h-auto max-w-full rounded-lg" src="/diego-in-japan.jpeg" width={200} height={200} alt="image description"/>
-                <figcaption className="mt-2 text-sm text-center font-extralight">Diego in Japan</figcaption>
-              </figure>
-          </div>
-      </section>
 
-      {/* <section className="flex flex-col gap-8">
+            {/* <section className="flex flex-col gap-8">
         <div className="section-title">Experience</div> 
         <div className="items-start md:flex-row md:items-start md:justify-between">
           <Timeline experiences={experienceData} />
@@ -61,19 +61,19 @@ export default function Home() {
         </div>
       </section> */}
 
-      <Tabs defaultValue="account" className="flex flex-col gap-0">
-        <TabsList>
-          <TabsTrigger value="account" className="w-full">Experience</TabsTrigger>
-          <TabsTrigger value="password" className="w-full">Education</TabsTrigger>
-        </TabsList>
-        <TabsContent value="account">
-            <Timeline experiences={experienceData}/>
-        </TabsContent>
-        <TabsContent value="password">
-          <Timeline experiences={educationData} />
-        </TabsContent>
-      </Tabs>
+            <Tabs defaultValue="account" className="flex flex-col gap-0">
+                <TabsList>
+                    <TabsTrigger value="account" className="w-full">Experience</TabsTrigger>
+                    <TabsTrigger value="password" className="w-full">Education</TabsTrigger>
+                </TabsList>
+                <TabsContent value="account">
+                    <Timeline experiences={experienceData} />
+                </TabsContent>
+                <TabsContent value="password">
+                    <Timeline experiences={educationData} />
+                </TabsContent>
+            </Tabs>
 
-    </article>
-  );
+        </article>
+    );
 }

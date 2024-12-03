@@ -1,73 +1,71 @@
 [
-    
     {
-      "name": "Stanford University",
-      "href": "https://online.stanford.edu/courses/xprod300-product-management-accelerated",
-      "title": "Certificate of Achievement, Product Management Accelerated",
-      "logo": "./stanford-1.webp",
-      "start": "Apr 2024",
-      "end": "Jul 2024",
-      "description": [
-        "Crash course in PM, focusing on the product lifecycle from start to finish leveraging the double diamond framework.", 
-        "Enhanced LinkedIn's job search experience by developing an innovative and engaging job search feature - ✨ LinkedIn Job Journeys ✨ - as part of the final capstone project."
-      ],
-      "links": [
-        {
-          "name": "Certificate",
-          "href": "https://digitalcredential.stanford.edu/check/5882FD10F557DE461EB9BD40C63686C5EF772FAB6D10CC6A4F46CB46192382FFNEtHc3c1YmJBdUF3d3daWGN6MWd3c2N6aU5ybWt4QWVOa0F0SG80YldqRHQwMyty",
-          "icon": "fas fa-external-link-alt"
-        }
-      ]
+        "name": "MIT xPRO",
+        "href": "https://executive-ed.xpro.mit.edu/designing-building-ai-products-services",
+        "title": "Professional Certificate, Designing and Building AI Products and Services",
+        "logo": "./mit-xpro-1.jpg",
+        "start": "Jul 2024",
+        "end": "Aug 2024",
+        "description": [
+            "Project-based AI/ML PM course, focusing on the product lifecycle for AI-driven products and services.",
+            "Cool buzzwords to summarise: AI, ML, deep learning, neural networks, CNNs, NLP, GenAI and more!"
+        ],
+        "links": [
+            {
+                "name": "Certificate",
+                "href": "https://certificates.emeritus.org/97667966-62f5-4301-a54d-ccf512357104#acc.QUTGdC6k",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
     },
     {
-      "name": "MIT xPRO",
-      "href": "https://executive-ed.xpro.mit.edu/designing-building-ai-products-services",
-      "title": "Professional Certificate, Designing and Building AI Products and Services",
-      "logo": "./mit-xpro-1.jpg",
-      "start": "Jul 2024",
-      "end": "Aug 2024",
-      "description": [
-        "Project-based AI/ML PM course, focusing on the product lifecycle for AI-driven products and services.",
-        "Cool buzzwords to summarise: AI, ML, deep learning, neural networks, CNNs, NLP, GenAI and more!"
-      ],
-      "links": [
-        {
-          "name": "Certificate",
-          "href": "https://certificates.emeritus.org/97667966-62f5-4301-a54d-ccf512357104#acc.QUTGdC6k",
-          "icon": "fas fa-external-link-alt"
-        }
-      ]
+        "name": "Stanford University",
+        "href": "https://online.stanford.edu/courses/xprod300-product-management-accelerated",
+        "title": "Certificate of Achievement, Product Management Accelerated",
+        "logo": "./stanford-1.webp",
+        "start": "Apr 2024",
+        "end": "Jul 2024",
+        "description": [
+            "Crash course in PM, focusing on the product lifecycle from start to finish leveraging the double diamond framework.",
+            "Enhanced LinkedIn's job search experience by developing an innovative and engaging job search feature - ✨ LinkedIn Job Journeys ✨ - as part of the final capstone project."
+        ],
+        "links": [
+            {
+                "name": "Certificate",
+                "href": "https://digitalcredential.stanford.edu/check/5882FD10F557DE461EB9BD40C63686C5EF772FAB6D10CC6A4F46CB46192382FFNEtHc3c1YmJBdUF3d3daWGN6MWd3c2N6aU5ybWt4QWVOa0F0SG80YldqRHQwMyty",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
     },
     {
-      "name": "University of Melbourne",
-      "href": "https://www.unimelb.edu.au/",
-      "title": "Bachelor of Science (BSc), Computing and Software Systems",
-      "logo": "./uom-2.png",
-      "start": "Mar 2018",
-      "end": "Dec 2020",
-      "description": [
-        "Achieved a WAM of 84.3 (First Class Honours).",
-        "Recipient of the Melbourne National Merit Scholarship 2018."
-      ],
-      "links": [
-        {
-          "name": "Transcript",
-          "href": "./academic-transcript.pdf",
-          "icon": "fas fa-external-link-alt"
-        }
-      ]
+        "name": "University of Melbourne",
+        "href": "https://www.unimelb.edu.au/",
+        "title": "Bachelor of Science (BSc), Computing and Software Systems",
+        "logo": "./uom-2.png",
+        "start": "Mar 2018",
+        "end": "Dec 2020",
+        "description": [
+            "Achieved a WAM of 84.3 (First Class Honours).",
+            "Recipient of the Melbourne National Merit Scholarship 2018."
+        ],
+        "links": [
+            {
+                "name": "Transcript",
+                "href": "./academic-transcript.pdf",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
     },
     {
-      "name": "Aquinas College",
-      "href": "https://www.aquinas.wa.edu.au/",
-      "title": "Western Australia Certificate of Education (WACE)",
-      "logo": "./ac-1.png",
-      "start": "2017",
-      "end": null,
-      "description": [
-        "Achieved an ATAR of 99.80 (top 0.2% in Australia)."
-      ],
-      "links": []
+        "name": "Aquinas College",
+        "href": "https://www.aquinas.wa.edu.au/",
+        "title": "Western Australia Certificate of Education (WACE)",
+        "logo": "./ac-1.png",
+        "start": "2017",
+        "end": null,
+        "description": [
+            "Achieved an ATAR of 99.80 (top 0.2% in Australia)."
+        ],
+        "links": []
     }
-  ]
-  
+]
