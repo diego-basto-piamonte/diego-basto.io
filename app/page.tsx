@@ -46,34 +46,28 @@ export default function Home() {
                     </figure>
                 </div>
             </section>
+            
+            {/* Experience / Education */}
+            <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+            
+                <Tabs defaultValue="account" className="flex flex-col gap-0">
+                    <TabsList>
+                        <TabsTrigger value="account" className="w-full">Experience</TabsTrigger>
+                        <TabsTrigger value="password" className="w-full">Education</TabsTrigger>
+                    </TabsList>
+                    <TabsContent value="account">
+                        <Timeline experiences={experienceData} />
+                    </TabsContent>
+                    <TabsContent value="password">
+                        <Timeline experiences={educationData} />
+                    </TabsContent>
+                </Tabs>
+            </section>
 
-            {/* <section className="flex flex-col gap-8">
-        <div className="section-title">Experience</div> 
-        <div className="items-start md:flex-row md:items-start md:justify-between">
-          <Timeline experiences={experienceData} />
-        </div>
-      </section>
-
-      <section className="flex flex-col gap-8">
-        <div className="section-title">Education</div> 
-        <div className="items-start md:flex-row md:items-start md:justify-between">
-          <Timeline experiences={educationData} />
-        </div>
-      </section> */}
-
-            <Tabs defaultValue="account" className="flex flex-col gap-0">
-                <TabsList>
-                    <TabsTrigger value="account" className="w-full">Experience</TabsTrigger>
-                    <TabsTrigger value="password" className="w-full">Education</TabsTrigger>
-                </TabsList>
-                <TabsContent value="account">
-                    <Timeline experiences={experienceData} />
-                </TabsContent>
-                <TabsContent value="password">
-                    <Timeline experiences={educationData} />
-                </TabsContent>
-            </Tabs>
-
+            {/* My Tech Stack */}
+            <section className="flex flex-col items-start gap-8">
+                {/* <div className="section-title">My Tech Stack</div> */}
+            </section>
         </article>
     );
 }

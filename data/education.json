@@ -1,5 +1,24 @@
 [
     {
+        "name": "University of Melbourne",
+        "href": "https://www.unimelb.edu.au/",
+        "title": "Bachelor of Science (BSc), Computing and Software Systems",
+        "logo": "./uom-2.png",
+        "start": "Mar 2018",
+        "end": "Dec 2020",
+        "description": [
+            "Achieved a WAM of 84.3 (First Class Honours).",
+            "Recipient of the Melbourne National Merit Scholarship 2018."
+        ],
+        "links": [
+            {
+                "name": "Transcript",
+                "href": "./academic-transcript.pdf",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
         "name": "MIT xPRO",
         "href": "https://executive-ed.xpro.mit.edu/designing-building-ai-products-services",
         "title": "Professional Certificate, Designing and Building AI Products and Services",
@@ -7,8 +26,8 @@
         "start": "Jul 2024",
         "end": "Aug 2024",
         "description": [
-            "Project-based AI/ML PM course, focusing on the product lifecycle for AI-driven products and services.",
-            "Cool buzzwords to summarise: AI, ML, deep learning, neural networks, CNNs, NLP, GenAI and more!"
+            "AI/ML PM course, focusing on the product lifecycle for AI-driven products and services.",
+            "Cool buzzwords to summarise: AI, ML, deep learning, neural networks, GAN, CNNs, NLP, GenAI and more!"
         ],
         "links": [
             {
@@ -33,25 +52,6 @@
             {
                 "name": "Certificate",
                 "href": "https://digitalcredential.stanford.edu/check/5882FD10F557DE461EB9BD40C63686C5EF772FAB6D10CC6A4F46CB46192382FFNEtHc3c1YmJBdUF3d3daWGN6MWd3c2N6aU5ybWt4QWVOa0F0SG80YldqRHQwMyty",
-                "icon": "fas fa-external-link-alt"
-            }
-        ]
-    },
-    {
-        "name": "University of Melbourne",
-        "href": "https://www.unimelb.edu.au/",
-        "title": "Bachelor of Science (BSc), Computing and Software Systems",
-        "logo": "./uom-2.png",
-        "start": "Mar 2018",
-        "end": "Dec 2020",
-        "description": [
-            "Achieved a WAM of 84.3 (First Class Honours).",
-            "Recipient of the Melbourne National Merit Scholarship 2018."
-        ],
-        "links": [
-            {
-                "name": "Transcript",
-                "href": "./academic-transcript.pdf",
                 "icon": "fas fa-external-link-alt"
             }
         ]
