@@ -1,5 +1,5 @@
 import TimelineItem from "./timeline-item";
-import { Experience } from "@/lib/schemas/schema-experience";
+import { Experience } from "@/lib/schemas";
 import { Card, CardContent } from "./ui/card";
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 
 export default function Timeline({ experiences }: Props) {
   return (
-    <Card>
+    <Card >
         <CardContent className="p-0">
             <ul className="ml-10 border-l">
                 {

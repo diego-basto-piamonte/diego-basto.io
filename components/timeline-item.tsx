@@ -1,4 +1,4 @@
-import { ExperienceSchema, Experience } from "@/lib/schemas/schema-experience";
+import { ExperienceSchema, Experience } from "@/lib/schemas";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
@@ -55,7 +55,7 @@ return (
             <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
                 {links?.map((link, idx) => (
                     <Link href={link.href} key={idx} target="_blank">
-                        <Badge key={idx} className="flex gap-2" variant="secondary">
+                        <Badge key={idx} className="flex gap-1" variant="secondary">
                             {link.name}
                             <ArrowUpRight className="size-4" />
                         </Badge>

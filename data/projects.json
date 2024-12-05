@@ -1,0 +1,31 @@
+[
+    {
+        "image": "/diego-basto-io.png",
+        "href": "https://www.mutc.com.au/",
+        "title": "diego-basto.io",
+        "description": "Minimalist, aesthetic, and lighting fast personal portfolio website to showcase a bit about me and my work.",
+        "tags": ["NextJS", "Tailwind CSS"],
+        "links": [
+            {
+                "name": "GitHub",
+                "href": "https://github.com/diego-basto-piamonte/diego-basto.io",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    }, 
+
+    {
+        "image": "/pilates.webp",
+        "href": "https://www.mutc.com.au/",
+        "title": "Aura Body and Mind",
+        "description": "A modern, responsive, and user-friendly website for a pilates, yoga and barre studio in Perth, Australia. Just for fun.",
+        "tags": ["NextJS", "Tailwind CSS", "Pocketbase", "Stripe"],
+        "links": [
+            {
+                "name": "MUTC",
+                "href": "https://www.mutc.com.au/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    }
+]

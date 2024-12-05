@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDownRight } from "lucide-react";
+import { MapPin, ArrowDownRight } from "lucide-react";
 import Socials from "@/components/socials";
 import Resume from "@/components/resume";
 import Timeline from "@/components/timeline";
@@ -22,10 +22,19 @@ export default function Home() {
                             pauseTime={2500}
                         />
                     </h2>
-                    <p className="mt-4 font-light">
-                        24-year-old tech enthusiast from Australia 🇦🇺 with 4+ years experience in consulting,
-                        specialised in delivering high-value digital products to clients.
-                    </p>
+                    <div className="mt-4 flex items-center gap-2">
+                        <MapPin className="size-5 hover:text-muted-foreground" />
+                        <p className="font-light hover:text-muted-foreground">Perth, Western Australia</p>
+                    </div>
+                    <div className="mt-4 font-light space-y-2">
+                        <b>A bit about Diego</b>
+                        <ul className="list-disc list-inside ml-4 space-y-1">
+                            <li>24-year-old tech enthusiast from Australia 🇦🇺 </li>
+                            <li>4+ years experience in tech consulting</li>
+                            <li>10+ digital products delivered to clients</li>
+                            <li>80+ dB mechanical keyboard</li>
+                        </ul>
+                    </div>
                     <p className="mt-4 font-light">
                         Adept at bridging the gap between technical complexities and strategic objectives
                         to successfully lead cross-functional teams to product success.
@@ -46,10 +55,10 @@ export default function Home() {
                     </figure>
                 </div>
             </section>
-            
+
             {/* Experience / Education */}
             <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
-            
+
                 <Tabs defaultValue="account" className="flex flex-col gap-0">
                     <TabsList>
                         <TabsTrigger value="account" className="w-full">Experience</TabsTrigger>
