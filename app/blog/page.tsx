@@ -8,7 +8,7 @@ export default function Blog() {
                     <h1 className="section-title">
                         Blog 
                     </h1>
-                    <p className="mt-4 text-muted-foreground space-y-2">Coming soon.</p>
+                    <p className="mt-4 text-muted-foreground space-y-2">Stay tuned.</p>
                 </div>
             </section>
             <section className="gap-4">

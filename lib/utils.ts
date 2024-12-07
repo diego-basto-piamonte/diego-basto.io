@@ -13,3 +13,11 @@ export const downloadPDF = (url: string, filename: string) => {
   link.click()
   document.body.removeChild(link)
 }
+
+export function formatDate(date: string) {
+    return new Date(date).toLocaleDateString("en-US", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+  }

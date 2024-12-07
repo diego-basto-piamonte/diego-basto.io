@@ -3,14 +3,14 @@
         "title": "Creating a personal portfolio website in 48 hours", 
         "description": "Building a personal portfolio website is easier than you think! I share how I planned, built, and launched mine using tools like Next.js and Tailwind CSS. Whether you're showcasing projects or starting a blog, this is your sign to get started.", 
         "date": "December 4, 2024", 
-        "href": "", 
+        "href": "blogs/personal-portfolio-website.mdx", 
         "slug": "personal-portfolio-website"
     }, 
     {
         "title": "Pickleball at the Park: Crazy Market Entry Close to Home", 
         "description": "Pickleball is taking over, and it’s the perfect addition to any tennis club. Learn how to bring it to your community, from setting up courts to getting everyone on board. It’s all about creating a space where tennis and pickleball can thrive together.",
         "date": "December 5, 2024", 
-        "href": "",
+        "href": "blogs/pickleball-at-the-park.mdx",
         "slug": "pickleball-at-the-park"
     }
 ]
