@@ -1,5 +1,6 @@
 import { Blog } from "@/lib/schemas";
-import { Card, CardTitle, CardContent, CardFooter } from "./ui/card";
+import { Card, CardTitle } from "./ui/card";
+import Link from "next/link";
 
 
 interface Props {
@@ -7,10 +8,10 @@ interface Props {
 }
 
 export default function BlogItem({ blog }: Props) {
-    const { title, description, href, date, slug } = blog;
+    const { title, description, date, slug } = blog;
 
     return (
-        <a href={"./blog/" + slug}>
+        <Link href={"./blog/" + slug}>
             <div className="text-pretty text-xs text-muted-foreground">{date}</div>
             <Card className="flex flex-col hover:text-muted-foreground border-none shadow-transparent">
                 <CardTitle className="text-lg px-0 pt-2">{title}</CardTitle>
@@ -19,6 +20,6 @@ export default function BlogItem({ blog }: Props) {
                 </div>
             </Card>
             <hr className="border-t border-muted my-2" />
-        </a>
+        </Link>
     )
 }

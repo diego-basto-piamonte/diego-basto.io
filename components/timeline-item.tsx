@@ -1,4 +1,4 @@
-import { ExperienceSchema, Experience } from "@/lib/schemas";
+import { Experience } from "@/lib/schemas";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
