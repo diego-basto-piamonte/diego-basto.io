@@ -1,5 +1,5 @@
 import path from 'path';
-import { getBlog, getBlogs } from "@/lib/blogs";
+import { getBlog } from "@/lib/blogs";
 import MDXContent from "@/components/mdx-content";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
