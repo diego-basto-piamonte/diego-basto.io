@@ -3,7 +3,7 @@ import projectsData from "@/data/projects.json";
 
 export default function ProjectGrid(){
     return (
-        <section className="grid grid-cols-2 gap-4 sm:grid-cols-2">
+        <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {
                 projectsData.map((project, idx) => (
                     <ProjectItem key={idx} project={project} />
