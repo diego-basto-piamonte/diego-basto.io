@@ -7,10 +7,14 @@ import { formatDate } from "@/lib/utils";
 import Image from "next/image";
 import Link from 'next/link';
 
+interface BlogPostProps {
+    params: Promise<{ slug: string }>  
+}
+
 
 const blogDir = path.join(process.cwd(), 'content')
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: BlogPostProps) {
     const { slug } = await params
     const blog = await getBlog(blogDir, slug)
 
