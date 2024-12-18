@@ -17,7 +17,7 @@ export default function Home() {
                     <h1 className="title">Diego Basto Piamonte 🚀</h1>
                     <h2 className="mt-4 h2 text-2xl">
                         <Typewriter
-                            texts={['Consultant', 'Software Engineer', 'Product Manager', 'Data Analyst']}
+                            texts={['Product Manager', 'Software Engineer', 'Data Analyst', 'Consultant']}
                             typingSpeed={75}
                             pauseTime={2500}
                         />
@@ -32,12 +32,12 @@ export default function Home() {
                             <li>24-year-old tech enthusiast from Australia 🇦🇺 </li>
                             <li>4+ years experience in tech consulting</li>
                             <li>10+ digital products delivered to clients</li>
-                            <li>80+ dB mechanical keyboard</li>
+                            <li>80+ dB mech keyboard</li>
                         </ul>
                     </div>
                     <p className="mt-4 font-light">
-                        Adept at bridging the gap between technical complexities and strategic objectives
-                        to successfully lead cross-functional teams to product success.
+                       Bridging the gap between technical complexities and strategic objectives,
+                       leading cross-functional teams to product success. 
                     </p>
                     <div className="mt-4 flex items-end gap-1">
                         <p className="font-semibold">Ask my chatbot anything about me (coming soon!)</p>

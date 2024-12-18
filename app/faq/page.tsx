@@ -5,7 +5,6 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-import { QuestionMarkCircledIcon } from '@radix-ui/react-icons';
 
 export default function Faq() {
     return (
@@ -14,8 +13,8 @@ export default function Faq() {
                 <div className="flex flex-col flex-1">
                     <h1 className="section-title">
                         Frequently Asked Questions 
-                        <QuestionMarkCircledIcon className="size-8 inline-block p-1" />
                     </h1>
+                    <p className="mt-4 text-muted-foreground space-y-2">Learn a bit more about me.</p>
                     <Accordion type='single' collapsible>
                         {faqData.map((faq, idx) => (
                             <AccordionItem key={idx} value={`item-${idx}`}>

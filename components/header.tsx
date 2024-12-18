@@ -17,10 +17,10 @@ const navLinks = [
         name: "blog", 
         href: "/blog",
     }, 
-    {
-        name: "contact", 
-        href: "/contact",
-    },
+    // {
+    //     name: "Contact", 
+    //     href: "/contact",
+    // },
     {
         name: "FAQ", 
         href: "/faq",

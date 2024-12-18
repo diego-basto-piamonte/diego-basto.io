@@ -1,6 +1,26 @@
 [
     {
-        "question": "So... are you a Consultant, Software Engineer, Product Manager, or Data Analyst?",
+        "question": "So... are you a Consultant, Product Manager, Software Engineer, or Data Analyst?",
         "answer": "Yes. 🤝"
+    },
+    {
+        "question": "How did you get into consulting?", 
+        "answer": "I enjoy problem solving. Consulting allows me to problem solve on a daily basis, working with clients across different industries and geographies. How good?"
+    },
+    {
+        "question": "What industries have you worked in?",
+        "answer": "Mining, oil & gas, insurance and manufacturing."
+    },
+    {
+        "question": "Where are you from?",
+        "answer": "Originally from Colombia, living in Australia for the past 10 years — proud to have a dual nationality."
+    },
+    {
+        "question": "How many languages do you speak?",
+        "answer": "English 🇦🇺 (aussie-american accent), Español 🇨🇴 and sometimes Spanglish."
+    },
+    {
+        "question": "What do you do outside of work?", 
+        "answer": "I enjoy travelling, playing tennis, cooking and spending time with the fam. Currently re-watching all Marvel movies in MCU chronological order. 🦸🏾‍♂️"
     }
 ]

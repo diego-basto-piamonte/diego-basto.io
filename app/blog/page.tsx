@@ -1,4 +1,4 @@
-import BlogGrid from "@/components/blog-grid";
+// import BlogGrid from "@/components/blog-grid";
 
 export default function Blog() {
     return (
@@ -8,12 +8,12 @@ export default function Blog() {
                     <h1 className="section-title">
                         Blog 
                     </h1>
-                    <p className="mt-4 text-muted-foreground space-y-2">Stay tuned.</p>
+                    <p className="mt-4 text-muted-foreground space-y-2">Stay tuned. Coming soon.</p>
                 </div>
             </section>
-            <section className="gap-4">
+            {/* <section className="gap-4">
                 <BlogGrid />
-            </section>
+            </section> */}
         </article>
     )
 }

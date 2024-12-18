@@ -1,40 +1,38 @@
-<<<<<<< HEAD
 # diego-basto.io
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+This is a fun little project to keep up with latest tech and share a bit about me. 
 
 ## Getting Started
 
-First, run the development server:
+To run the development server, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/diego-basto/diego-basto.io.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Responsive design for optimal viewing on different devices.
+- Interactive and user-friendly interface.
+- Easy navigation between different sections.
+- Showcase of projects with descriptions, screenshots, and links.
+- Information about my skills, experience, and education.
+- Contact form for reaching out to me.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- Next.js: A popular React framework for building server-side rendered and static websites.
+- TypeScript: A statically typed superset of JavaScript that enhances code quality and maintainability.
+- shadcn/ui: A modern and minimalistic UI library for creating beautiful user interfaces.
+- Vercel: A cloud platform for deploying and hosting Next.js applications.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website is automatically deployed to Vercel whenever changes are pushed to the `main` branch. You can access the live version of the website at [diego-basto.io](https://diego-basto.io).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Feedback and Contributions
 
-## Deploy on Vercel
+Feedback and contributions are always welcome! If you have any suggestions or find any issues, please open an issue or submit a pull request on the [GitHub repository](https://github.com/diego-basto/diego-basto.io).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 1fc3669 (initial commit: diego-basto.io official launch! woop woop!)
+# diego-basto.io

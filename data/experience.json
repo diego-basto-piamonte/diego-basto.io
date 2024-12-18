@@ -1,80 +1,80 @@
 [
     {
-      "name": "Visagio",
-      "href": "https://www.visagio.com/",
-      "title": "Senior Consultant",
-      "logo": "./visagio.jpeg",
-      "start": "May 2020",
-      "end": "Present",
-      "description": [
-        "Led cross-functional teams to deliver 10+ high-impact digital products to clients across natural resources, oil & gas, and insurance sectors in APAC, specialising in SaaS solutions, low-code applications, and process automations.",
-        "Managed the development and implementation as a Technical Product Manager of a supply chain planning web application for a global mining leader, delivering an estimated $17.5M AUD EBITDA uplift by optimising production and maintenance plans.",
-        "Pioneered an engagement with a key client in Singapore, representing the Australia office in its first project in the region. Successfully built a strong relationship with senior management, establishing a partnership that has spanned 2+ years and involved 30+ consultants.", 
-        "Leading the productification workstream for v(dev), Visagio's own software dev house, converting successful product-related consulting success stories to fit-for-purpose digital products."
-      ],
-      "links": [
-        {
-          "name": "Visagio",
-          "href": "https://www.visagio.com/",
-          "icon": "fas fa-external-link-alt"
-        } 
-      ]
+        "name": "Visagio",
+        "href": "https://visagio.com/en/home/",
+        "title": "Senior Consultant",
+        "logo": "./visagio.jpeg",
+        "start": "May 2020",
+        "end": "Present",
+        "description": [
+            "Led cross-functional teams to deliver 10+ high-impact digital products to clients across natural resources, oil & gas, and insurance sectors in APAC, specialising in SaaS solutions, low-code applications, and process automations.",
+            "Managed the development and implementation as a Technical Product Manager of a supply chain planning web application for a global mining leader, delivering an estimated $17.5M AUD EBITDA uplift by optimising production and maintenance plans.",
+            "Pioneered an engagement with a key client in Singapore, representing the Australia office in its first project in the region. Successfully built a strong relationship with senior management, establishing a partnership that has spanned 2+ years and involved 30+ consultants.",
+            "Leading the productification workstream for v(dev), Visagio's own software dev house, converting successful product-related consulting success stories to fit-for-purpose digital products."
+        ],
+        "links": [
+            {
+                "name": "Visagio",
+                "href": "https://visagio.com/en/home/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
     },
     {
-      "name": "Melbourne University Tennis Club 🎾",
-      "href": "https://www.mutc.com.au/",
-      "title": "Co-President",
-      "logo": "./mutc.jpeg",
-      "start": "Jan 2020",
-      "end": "Dec 2020",
-      "description": [
-        "Steered the 300+ members club through the challenges of the COVID-19 pandemic, achieving a 100%+ social media growth through targeted digital campaigns.",
-        "Secured financial stability through strategic planning and resource allocation, positioning the club for future success."
-      ],
-      "links": [
-        {
-          "name": "MUTC",
-          "href": "https://www.mutc.com.au/",
-          "icon": "fas fa-external-link-alt"
-        } 
-      ]
-    }, 
-    {
-      "name": "South32", 
-      "href": "https://www.south32.net/",
-      "title": "Summer Intern",
-      "logo": "./s32.webp",
-      "start": "Nov 2019",
-      "end": "Feb 2020",
-      "description": [
-        "Gained exposure to the mining industry through a 12-week internship in the Cloud & Productivity team."
-      ],
-      "links": [
-        {
-          "name": "South32",
-          "href": "https://www.south32.net/",
-          "icon": "fas fa-external-link-alt"
-        }
-      ]
+        "name": "South32",
+        "href": "https://www.south32.net/",
+        "title": "Summer Intern",
+        "logo": "./s32.webp",
+        "start": "Nov 2019",
+        "end": "Feb 2020",
+        "description": [
+            "Gained exposure to the mining industry through a 12-week internship in the Cloud & Productivity team."
+        ],
+        "links": [
+            {
+                "name": "South32",
+                "href": "https://www.south32.net/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
     },
     {
-      "name": "Higgins Park Tennis Club 🎾", 
-      "href": "https://higginsparktennis.com.au/",
-      "title": "Tennis Coach",
-      "logo": "./hptc.jpg",
-      "start": "Jan 2016",
-      "end": "Present",
-      "description": [
-        "Initially a part-time side hustle while studying, now just do it for fun when I can.", 
-        "Experienced with player initiation (ages 4-8), technical development (ages 8-12), and match play and tennis IQ development (ages 12+)."
-      ], 
-      "links": [
-        {
-          "name": "HPTC",
-          "href": "https://higginsparktennis.com.au/",
-          "icon": "fas fa-external-link-alt"
-        }
-      ]
+        "name": "Melbourne University Tennis Club 🎾",
+        "href": "https://www.mutc.com.au/",
+        "title": "Co-President",
+        "logo": "./mutc.jpeg",
+        "start": "Jan 2020",
+        "end": "Dec 2020",
+        "description": [
+            "Steered the 300+ members club through the challenges of the COVID-19 pandemic, achieving a 100%+ social media growth through targeted digital campaigns.",
+            "Secured financial stability through strategic planning and resource allocation, positioning the club for future success."
+        ],
+        "links": [
+            {
+                "name": "MUTC",
+                "href": "https://www.mutc.com.au/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    
+    {
+        "name": "Higgins Park Tennis Club 🎾",
+        "href": "https://higginsparktennis.com.au/",
+        "title": "Tennis Coach",
+        "logo": "./hptc.jpg",
+        "start": "Jan 2016",
+        "end": "Present",
+        "description": [
+            "Initially a part-time side hustle while studying, now just do it for fun when I can.",
+            "Experienced with player initiation (ages 4-8), technical development (ages 8-12), and match play and tennis IQ development (ages 12+)."
+        ],
+        "links": [
+            {
+                "name": "HPTC",
+                "href": "https://higginsparktennis.com.au/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
     }
-  ]
-  
+]
