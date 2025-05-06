@@ -18,7 +18,14 @@
         "image": "/aura-y-diego.png",
         "title": "Aura & Diego",
         "href": "/projects",
-        "description": "A heartfelt, interactive, and visually stunning online wedding invitation experience that sets the tone for our special day. Earned me some brownie points with the future missus. Will share repo soon.",
-        "tags": ["NextJS", "Tailwind CSS", "Resend", "Vercel"]
+        "description": "A heartfelt, interactive, and visually stunning online wedding invitation experience that sets the tone for our special day. Earned me some brownie points with the future missus. Will share repo after the big day.",
+        "tags": ["NextJS", "Tailwind CSS", "Resend", "Vercel"], 
+        "links": [
+            {
+                "name": "GitHub (coming soon)",
+                "href": "/projects",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
     }
 ]
