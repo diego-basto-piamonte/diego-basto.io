@@ -15,16 +15,10 @@
     }, 
 
     {
-        "image": "/pilates.webp",
-        "title": "Aura Body and Mind",
-        "description": "A modern, responsive, and user-friendly website for a pilates, yoga and barre studio in Perth, Australia. Earned me some brownie points.",
-        "tags": ["NextJS", "Tailwind CSS", "Pocketbase", "Vercel", "Stripe"],
-        "links":[
-            {
-                "name": "Coming Soon!",
-                "href": "/",
-                "icon": "fas fa-external-link-alt"
-            }
-        ]
+        "image": "/aura-y-diego.png",
+        "title": "Aura & Diego",
+        "href": "/projects",
+        "description": "A heartfelt, interactive, and visually stunning online wedding invitation experience that sets the tone for our special day. Earned me some brownie points with the future missus. Will share repo soon.",
+        "tags": ["NextJS", "Tailwind CSS", "Resend", "Vercel"]
     }
 ]

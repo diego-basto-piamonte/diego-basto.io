@@ -29,10 +29,9 @@ export default function Home() {
                     <div className="mt-4 font-light space-y-2">
                         <b>A bit about Diego</b>
                         <ul className="list-disc list-inside ml-4 space-y-1">
-                            <li>24-year-old tech enthusiast from Australia 🇦🇺 </li>
-                            <li>4+ years experience in tech consulting</li>
+                            <li>25-year-old tech enthusiast from Australia 🇦🇺 </li>
+                            <li>5+ years experience in tech consulting</li>
                             <li>10+ digital products delivered to clients</li>
-                            <li>80+ dB mech keyboard</li>
                         </ul>
                     </div>
                     <p className="mt-4 font-light">

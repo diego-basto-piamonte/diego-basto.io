@@ -2,20 +2,39 @@
     {
         "name": "Visagio",
         "href": "https://visagio.com/en/home/",
-        "title": "Senior Consultant",
+        "title": "Senior Product Consultant",
         "logo": "./visagio.jpeg",
         "start": "May 2020",
         "end": "Present",
         "description": [
-            "Led cross-functional teams to deliver 10+ high-impact digital products to clients across natural resources, oil & gas, and insurance sectors in APAC, specialising in SaaS solutions, low-code applications, and process automations.",
-            "Managed the development and implementation as a Technical Product Manager of a supply chain planning web application for a global mining leader, delivering an estimated $17.5M AUD EBITDA uplift by optimising production and maintenance plans.",
-            "Pioneered an engagement with a key client in Singapore, representing the Australia office in its first project in the region. Successfully built a strong relationship with senior management, establishing a partnership that has spanned 2+ years and involved 30+ consultants.",
-            "Leading the productification workstream for v(dev), Visagio's own software dev house, converting successful product-related consulting success stories to fit-for-purpose digital products."
+            "Led cross-functional teams to deliver 10+ high-impact digital products to clients across natural resources, oil & gas, and insurance sectors in APAC..",
+            "Led the development and implementation of a supply chain planning web application, delivering an estimated $17.5M AUD EBITDA uplift by optimising production and maintenance plans.",
+            "Led the development and implementation of a train driver resource allocation proof-of-concept application, cutting driver wait times by 40% at a remote mining port.",
+            "Led a first-of-its-kind management system implementation project in Singapore, successfully establishing a strong partnership that has spanned 2+ years and involved 30+ consultants.",
+            "Led the development of an internal innovation management application, increasing active users from 20 to 300+ after a successful deployment."
         ],
         "links": [
             {
                 "name": "Visagio",
                 "href": "https://visagio.com/en/home/",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "name": "v(dev), a Visagio Company",
+        "href": "https://visagio.com/en/vdev/",
+        "title": "Product Lead",
+        "logo": "./v(dev).png",
+        "start": "Jul 2023",
+        "end": "Present",
+        "description": [
+            "Currently leading the productification workstream, converting successful product-related consulting success stories to fit-for-purpose digital products."
+        ],
+        "links": [
+            {
+                "name": "v(dev)",
+                "href": "https://visagio.com/en/vdev/",
                 "icon": "fas fa-external-link-alt"
             }
         ]
