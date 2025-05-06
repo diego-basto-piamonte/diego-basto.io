@@ -16,7 +16,7 @@ import Footer from "@/components/footer";
 // });
 
 export const metadata: Metadata = {
-  title: "diego-basto.io",
+  title: "diego-basto.me",
   description: "My personal website to showcase a bit about me.",
 };
 

@@ -2,7 +2,7 @@
     {
         "image": "/diego-basto-io.png",
         "href": "/",
-        "title": "diego-basto.io",
+        "title": "diego-basto.me",
         "description": "Minimalist, aesthetic, and lighting fast personal portfolio website to showcase a bit about me and my work.",
         "tags": ["NextJS", "Tailwind CSS", "Vercel"],
         "links": [
