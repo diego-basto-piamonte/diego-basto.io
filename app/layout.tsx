@@ -3,6 +3,7 @@ import Providers from "@/components/providers";
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer";
+import Chat from "@/components/chat";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Providers>
           <Header/>
           <main className="grow">{children}</main>
+          <Chat/>
           <Footer/>
         </Providers>
       </body>

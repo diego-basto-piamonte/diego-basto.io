@@ -1,5 +1,7 @@
+'use client'
+
 import Image from "next/image";
-import { MapPin, ArrowDownRight } from "lucide-react";
+import { ArrowDownRight } from "lucide-react";
 import Socials from "@/components/socials";
 import Resume from "@/components/resume";
 import Timeline from "@/components/timeline";
@@ -7,8 +9,13 @@ import experienceData from "@/data/experience.json";
 import educationData from "@/data/education.json";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Typewriter from "@/components/typewriter";
+import { useChat } from "./context/ChatContext";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
+
+    const { toggleChat } = useChat();
+
     return (
         <article className="mt-8 flex flex-col gap-8 pb-8 w-100">
             {/* Introduction */}
@@ -23,8 +30,7 @@ export default function Home() {
                         />
                     </h2>
                     <div className="mt-4 flex items-center gap-2">
-                        <MapPin className="size-5 hover:text-muted-foreground" />
-                        <p className="font-light hover:text-muted-foreground">Perth, Western Australia</p>
+                        <p className="font-light hover:text-muted-foreground">📍 Perth, Western Australia</p>
                     </div>
                     <div className="mt-4 font-light space-y-2">
                         <b>A bit about Diego</b>
@@ -35,12 +41,21 @@ export default function Home() {
                         </ul>
                     </div>
                     <p className="mt-4 font-light">
-                       Bridging the gap between technical complexities and strategic objectives,
-                       leading cross-functional teams to product success. 
+                        Bridging the gap between technical complexities and strategic objectives,
+                        leading cross-functional teams to product success.
                     </p>
-                    <div className="mt-4 flex items-end gap-1">
-                        <p className="font-semibold">Ask my chatbot anything about me (coming soon!)</p>
-                        <ArrowDownRight className="size-5 animate-bounce" />
+                    <div className="mt-4 flex items-end gap-1 font-semibold">
+                        <p>
+                            Have a question? Raise a ticket with{' '}
+                            <Button
+                                onClick={() => toggleChat(true)}
+                                className="text-primary hover:underline focus:outline-none m-0 p-0 font-semibold text-md"
+                                variant="link"
+                            >
+                                Tech Support
+                                <ArrowDownRight className="size-5" />
+                            </Button>
+                        </p>
                     </div>
                     <section className="mt-8 flex items-center gap-8">
                         <Resume />
