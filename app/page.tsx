@@ -9,12 +9,12 @@ import experienceData from "@/data/experience.json";
 import educationData from "@/data/education.json";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Typewriter from "@/components/typewriter";
-import { useChat } from "./context/ChatContext";
+import { useChatUI } from "./context/ChatContext";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
 
-    const { toggleChat } = useChat();
+    const { toggleChat } = useChatUI();
 
     return (
         <article className="mt-8 flex flex-col gap-8 pb-8 w-100">

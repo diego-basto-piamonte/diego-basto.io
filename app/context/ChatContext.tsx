@@ -28,10 +28,10 @@ function ChatProvider({ children }: { children: ReactNode }) {
 };
 
 // Create a custom hook for easy access to the context (remains a named export)
-export const useChat = () => {
+export const useChatUI = () => {
     const context = useContext(ChatContext);
     if (context === undefined) {
-        throw new Error('useChat must be used within a ChatProvider');
+        throw new Error('useChatUI must be used within a ChatProvider');
     }
     return context;
 };
