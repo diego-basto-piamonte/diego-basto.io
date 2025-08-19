@@ -143,7 +143,7 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
             </header>
 
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
-                {messages.map((message, index) => (
+                {messages.map((message) => (
                     <div key={message.id} className={`flex gap-3 ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                         {message.role === 'assistant' && (
                             <div className="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center">
