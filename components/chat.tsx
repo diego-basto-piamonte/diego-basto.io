@@ -6,15 +6,28 @@ import { Input } from "@/components/ui/input";
 import { Bot, Send, ChevronUp, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from 'framer-motion';
 import { useChatUI } from '../app/context/ChatContext';
-import { DefaultChatTransport } from 'ai';
+import { UIMessage } from 'ai';
 import { useChat } from '@ai-sdk/react';
 
-// Mock data for initial display
-const initialMessages = [
-    { id: 1, role: 'assistant', content: "Hi! I'm the AI assistant. Ask me anything about Diego's professional background." },
+// intiial message to display to user
+const initialMessages: UIMessage[] = [
+    {
+        id: 'initial-messages',
+        role: 'assistant',
+        parts: [
+            { type: 'text', text: "Hi! I'm Diego's personal tech support. What would you like to know about Diego?" }
+        ]
+    },
 ];
 
-// Main Chat Component
+// example questions to prompt user
+const exampleQuestions = [
+    "Tell me about his work experience.",
+    "What is he currently building? ",
+    "Tell me a random fun fact about Diego.",
+];
+
+// wrapper component that checks whether we should render ChatIcon or ChatWindow
 export default function Chat() {
     const { isChatOpen, toggleChat } = useChatUI();
 
@@ -29,7 +42,7 @@ export default function Chat() {
 }
 
 
-// The floating icon that opens the chat
+// when chat is off, display only a chat icon to prompt user to click
 const ChatIcon = ({ openChat, isOpen }: { openChat: () => void; isOpen: boolean }) => {
     return (
         <AnimatePresence>
@@ -66,23 +79,32 @@ const ChatIcon = ({ openChat, isOpen }: { openChat: () => void; isOpen: boolean 
     );
 };
 
-
-// The main chat window component (Phase 1 Logic)
+// chat window with tech support
 const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
     const [input, setInput] = useState('');
 
-    const { messages, sendMessage } = useChat();
+    const { messages, sendMessage } = useChat({
+        id: 'tech-support',
+        messages: initialMessages,
+    });
+
+    // user clicks on a suggestion bubble
+    const handleSuggestionClick = (question: string) => {
+        sendMessage({
+            text: question,
+        });
+    };
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (!input.trim()) return;
+        // Corrected to use the proper message format
         sendMessage({
             text: input,
         })
         setInput('');
     }
 
-    // Auto-scroll to the bottom of the message list
     const messagesEndRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -94,9 +116,9 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="fixed bottom-24 right-4 w-full max-w-md h-[70vh] max-h-[600px] z-50 bg-background border rounded-lg shadow-xl flex flex-col"
+            className="fixed bottom-24 right-4 w-[calc(100%-2rem)] sm:w-full max-w-md h-[70vh] max-h-[600px] z-50 bg-background border rounded-lg shadow-xl flex flex-col"
         >
-            {/* Chat Header */}
+            {/* ... Chat Header is unchanged ... */}
             <header>
                 <button
                     onClick={closeChat}
@@ -120,7 +142,6 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
                 </button>
             </header>
 
-            {/* Message List */}
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
                 {messages.map((message, index) => (
                     <div key={message.id} className={`flex gap-3 ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}>
@@ -142,8 +163,28 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
                 <div ref={messagesEndRef} />
             </div>
 
-            {/* Chat Input Form */}
+            {messages.length === 1 && (
+                <div className="flex flex-wrap gap-2 m-4 justify-end">
+                    {exampleQuestions.map((question, i) => (
+                        <Button
+                            key={i}
+                            variant="outline"
+                            className="h-auto whitespace-normal text-left
+                                    border-sky-500 text-sky-500
+                                    hover:bg-sky-100 hover:text-sky-600
+                                    dark:border-sky-400 dark:text-sky-400
+                                    dark:hover:bg-sky-950 dark:hover:text-sky-400"
+                            onClick={() => handleSuggestionClick(question)}
+                        >
+                            {question}
+                        </Button>
+                    ))}
+                </div>
+            )}
+
             <footer className="p-4 border-t">
+
+
                 <form onSubmit={handleSubmit} className="flex items-center gap-2">
                     <Input
                         value={input}
