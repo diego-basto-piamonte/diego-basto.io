@@ -1,5 +1,5 @@
 import { google } from '@ai-sdk/google';
-import { convertToModelMessages, streamText, UIMessage } from 'ai'; // Cleaned up unused imports
+import { convertToModelMessages, smoothStream, streamText, UIMessage } from 'ai'; // Cleaned up unused imports
 import experienceData from "@/data/experience.json";
 import educationData from "@/data/education.json";
 import faqData from "@/data/faq.json";
@@ -13,16 +13,16 @@ function getFullContext(): string {
     context += JSON.stringify(experienceData) + '\n';
 
     context += '--- Education ---\n';
-    context += `${JSON.stringify(educationData)}\n`; 
-    
+    context += `${JSON.stringify(educationData)}\n`;
+
     context += '--- FAQ ---\n';
-    context += `${JSON.stringify(faqData)}\n`; 
+    context += `${JSON.stringify(faqData)}\n`;
 
     context += '--- Projects ---\n';
-    context += `${JSON.stringify(projectsData)}\n`; 
+    context += `${JSON.stringify(projectsData)}\n`;
 
     context += '--- Fun Facts ---\n';
-    context += `${JSON.stringify(funFactsData)}\n`; 
+    context += `${JSON.stringify(funFactsData)}\n`;
 
     return context;
 }
@@ -54,7 +54,7 @@ function buildSystemPrompt(): string {
     --- FULL KNOWLEDGE BASE ---
     ${fullContext}
     --- END OF KNOWLEDGE BASE ---`;
-    
+
     return systemPrompt;
 }
 
@@ -69,7 +69,11 @@ export async function POST(req: Request) {
         model: google('models/gemini-1.5-flash-latest'),
         system: systemPrompt, // pass static system prompt with guardrails and full context
         messages: convertToModelMessages(messages),
+        experimental_transform: smoothStream({
+            delayInMs:30, // optional: defaults to 10ms
+            chunking: 'word', // optional: defaults to 'word'
+        }),
     });
-    
+
     return result.toUIMessageStreamResponse();
 }

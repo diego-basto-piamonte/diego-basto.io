@@ -3,7 +3,7 @@
 import { ThemeProvider, useTheme } from "next-themes";
 import { Toaster } from "sonner";
 import React from "react";
-import ChatProvider from "@/app/context/ChatContext";
+import { ChatStoreProvider } from "@/app/context/ChatStore";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
     return (
@@ -13,10 +13,10 @@ export default function Providers({ children }: { children: React.ReactNode }) {
             defaultTheme="system"
             disableTransitionOnChange
         >
-            <ChatProvider>
+            <ChatStoreProvider>
                 {children}
                 <ToastProvider />
-            </ChatProvider>
+            </ChatStoreProvider>
         </ThemeProvider>
     );
 }

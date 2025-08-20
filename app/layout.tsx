@@ -17,25 +17,25 @@ import Chat from "@/components/chat";
 // });
 
 export const metadata: Metadata = {
-  title: "diego-basto.me",
-  description: "My personal website to showcase a bit about me.",
+    title: "diego-basto.me",
+    description: "My personal website to showcase a bit about me.",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-family antialiased">
-        <Providers>
-          <Header/>
-          <main className="grow">{children}</main>
-          <Chat/>
-          <Footer/>
-        </Providers>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" suppressHydrationWarning>
+            <body className="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-family antialiased">
+                <Providers>
+                    <Header />
+                    <main className="grow">{children}</main>
+                    <Chat />
+                    <Footer />
+                </Providers>
+            </body>
+        </html>
+    );
 }

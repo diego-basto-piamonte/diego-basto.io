@@ -5,19 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Bot, Send, ChevronUp, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from 'framer-motion';
-import { useChatUI } from '../app/context/ChatContext';
 import { UIMessage } from 'ai';
 import { useChat } from '@ai-sdk/react';
+import { useChatStore } from '@/app/context/ChatStore';
 
 // intiial message to display to user
-const initialMessages: UIMessage[] = [
+let chatHistory: UIMessage[] = [
     {
         id: 'initial-messages',
         role: 'assistant',
         parts: [
             { type: 'text', text: "Hi! I'm Diego's personal tech support. What would you like to know about Diego?" }
         ]
-    },
+    }
 ];
 
 // example questions to prompt user
@@ -29,7 +29,8 @@ const exampleQuestions = [
 
 // wrapper component that checks whether we should render ChatIcon or ChatWindow
 export default function Chat() {
-    const { isChatOpen, toggleChat } = useChatUI();
+
+    const { isChatOpen, toggleChat } = useChatStore();
 
     return (
         <>
@@ -40,7 +41,6 @@ export default function Chat() {
         </>
     );
 }
-
 
 // when chat is off, display only a chat icon to prompt user to click
 const ChatIcon = ({ openChat, isOpen }: { openChat: () => void; isOpen: boolean }) => {
@@ -85,7 +85,7 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
 
     const { messages, sendMessage } = useChat({
         id: 'tech-support',
-        messages: initialMessages,
+        messages: chatHistory,
     });
 
     // user clicks on a suggestion bubble
@@ -98,11 +98,16 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (!input.trim()) return;
-        // Corrected to use the proper message format
+        
         sendMessage({
             text: input,
-        })
+        });
         setInput('');
+    }
+
+    const handleClose = () => {
+        chatHistory = messages;
+        closeChat()
     }
 
     const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -118,10 +123,10 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="fixed bottom-24 right-4 w-[calc(100%-2rem)] sm:w-full max-w-md h-[70vh] max-h-[600px] z-50 bg-background border rounded-lg shadow-xl flex flex-col"
         >
-            {/* ... Chat Header is unchanged ... */}
+            {/* Chat Header */}
             <header>
                 <button
-                    onClick={closeChat}
+                    onClick={handleClose}
                     className="w-full p-4 border-b flex items-center justify-between cursor-pointer hover:bg-muted/50 transition-colors"
                     aria-label="Minimize chat"
                 >
@@ -183,8 +188,6 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
             )}
 
             <footer className="p-4 border-t">
-
-
                 <form onSubmit={handleSubmit} className="flex items-center gap-2">
                     <Input
                         value={input}
