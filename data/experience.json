@@ -2,7 +2,7 @@
     {
         "name": "Visagio",
         "href": "https://visagio.com/en/home/",
-        "title": "Senior Product Consultant",
+        "title": "Intern → Consultant → Product Manager",
         "logo": "./visagio.jpeg",
         "start": "May 2020",
         "end": "Present",
@@ -24,10 +24,10 @@
     {
         "name": "v(dev), a Visagio Company",
         "href": "https://visagio.com/en/vdev/",
-        "title": "Product Lead",
+        "title": "Analyst → Product Lead",
         "logo": "./v(dev).png",
         "start": "Jul 2023",
-        "end": "Present",
+        "end": "Jun 2025",
         "description": [
             "Currently leading the productification workstream, converting successful product-related consulting success stories to fit-for-purpose digital products."
         ],
