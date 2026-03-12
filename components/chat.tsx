@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { UIMessage } from 'ai';
 import { useChat } from '@ai-sdk/react';
 import { useChatStore } from '@/app/context/ChatStore';
+import ReactMarkdown from 'react-markdown';
 
 // intiial message to display to user
 let chatHistory: UIMessage[] = [
@@ -83,7 +84,7 @@ const ChatIcon = ({ openChat, isOpen }: { openChat: () => void; isOpen: boolean 
 const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
     const [input, setInput] = useState('');
 
-    const { messages, sendMessage } = useChat({
+    const { messages, sendMessage, status } = useChat({
         id: 'tech-support',
         messages: chatHistory,
     });
@@ -98,7 +99,6 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (!input.trim()) return;
-        
         sendMessage({
             text: input,
         });
@@ -155,16 +155,30 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
                                 <Bot className="w-5 h-5 text-primary-foreground" />
                             </div>
                         )}
-                        <div className={`rounded-lg px-4 py-2 max-w-xs md:max-w-sm whitespace-pre-wrap ${message.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted'}`}>
+                        <div className={`rounded-lg px-4 py-2 max-w-xs md:max-w-sm ${message.role === 'user' ? 'bg-primary text-primary-foreground whitespace-pre-wrap' : 'bg-muted prose prose-sm dark:prose-invert max-w-none prose-p:my-1 prose-ul:my-1 prose-ol:my-1 prose-li:my-0'}`}>
                             {message.parts.map((part, i) => {
                                 switch (part.type) {
                                     case 'text':
-                                        return <div key={`${message.id}-${i}`}>{part.text}</div>;
+                                        return message.role === 'assistant'
+                                            ? <ReactMarkdown key={`${message.id}-${i}`}>{part.text}</ReactMarkdown>
+                                            : <div key={`${message.id}-${i}`}>{part.text}</div>;
                                 }
                             })}
                         </div>
                     </div>
                 ))}
+                {status === 'submitted' && (
+                    <div className="flex gap-3 justify-start">
+                        <div className="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center">
+                            <Bot className="w-5 h-5 text-primary-foreground" />
+                        </div>
+                        <div className="rounded-lg px-4 py-3 bg-muted flex items-center gap-1">
+                            <span className="w-2 h-2 rounded-full bg-muted-foreground/50 animate-bounce [animation-delay:0ms]" />
+                            <span className="w-2 h-2 rounded-full bg-muted-foreground/50 animate-bounce [animation-delay:150ms]" />
+                            <span className="w-2 h-2 rounded-full bg-muted-foreground/50 animate-bounce [animation-delay:300ms]" />
+                        </div>
+                    </div>
+                )}
                 <div ref={messagesEndRef} />
             </div>
 

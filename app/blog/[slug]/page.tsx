@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 interface BlogPostProps {
     params: Promise<{ slug: string }>  
@@ -18,7 +19,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
     const { slug } = await params
     const blog = await getBlog(blogDir, slug)
 
-    if (!blog) return { notFound: true }
+    if (!blog) notFound()
 
     const { metadata, content } = blog
     const { title, description, image, date } = metadata

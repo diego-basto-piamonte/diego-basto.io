@@ -1,5 +1,10 @@
-import { google } from '@ai-sdk/google';
-import { convertToModelMessages, smoothStream, streamText, UIMessage } from 'ai'; // Cleaned up unused imports
+import { createOpenAI } from '@ai-sdk/openai';
+
+const openrouter = createOpenAI({
+    baseURL: 'https://openrouter.ai/api/v1',
+    apiKey: process.env.OPEN_ROUTER_API_KEY,
+});
+import { convertToModelMessages, smoothStream, streamText, UIMessage } from 'ai';
 import experienceData from "@/data/experience.json";
 import educationData from "@/data/education.json";
 import faqData from "@/data/faq.json";
@@ -62,19 +67,13 @@ function buildSystemPrompt(): string {
 
 
 export async function POST(req: Request) {
-
     const { messages }: { messages: UIMessage[] } = await req.json();
 
-    const systemPrompt = buildSystemPrompt();
-
-    const result = await streamText({
-        model: google('models/gemini-1.5-flash-latest'),
-        system: systemPrompt, // pass static system prompt with guardrails and full context
+    const result = streamText({
+        model: openrouter.chat('stepfun/step-3.5-flash:free'),
+        system: buildSystemPrompt(),
         messages: convertToModelMessages(messages),
-        experimental_transform: smoothStream({
-            delayInMs:30, // optional: defaults to 10ms
-            chunking: 'word', // optional: defaults to 'word'
-        }),
+        experimental_transform: smoothStream(),
     });
 
     return result.toUIMessageStreamResponse();
