@@ -1,5 +1,6 @@
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { GlowCard } from "./glow-card";
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "@/lib/schemas";
@@ -13,6 +14,7 @@ export function ProjectItem({ project }: Props) {
     const { image = "", href, title, description, tags, links } = project;
 
     return (
+        <GlowCard className="rounded-xl">
         <Card className="flex flex-col">
 
             <CardHeader>
@@ -66,6 +68,7 @@ export function ProjectItem({ project }: Props) {
                 )}
             </CardFooter>
         </Card>
+        </GlowCard>
     )
 
 }

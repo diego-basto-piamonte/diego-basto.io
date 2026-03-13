@@ -1,29 +1,5 @@
 [
     {
-        "image": "/diego-basto-io.png",
-        "href": "/",
-        "title": "diego-basto.me",
-        "description": "Minimalist, aesthetic, and lighting fast personal portfolio website to showcase a bit about me and my work.",
-        "tags": ["NextJS", "Tailwind CSS", "Vercel"],
-        "links": [
-            {
-                "name": "GitHub",
-                "href": "https://github.com/diego-basto-piamonte/diego-basto.io",
-                "icon": "fas fa-external-link-alt"
-            }
-        ]
-    }, 
-
-    {
-        "image": "/aura-y-diego.png",
-        "title": "Aura & Diego",
-        "href": "/projects",
-        "description": "A heartfelt, interactive, and visually stunning online wedding invitation experience that sets the tone for our special day. Earned me some brownie points with the future missus. Will share repo after the big day.",
-        "tags": ["NextJS", "Tailwind CSS", "Resend", "Vercel"],
-        "links": []
-    },
-
-    {
         "image": "/sendit-homepage.png",
         "href": "https://sendit-app.com",
         "title": "SEND IT",
@@ -33,6 +9,34 @@
             {
                 "name": "Website",
                 "href": "https://sendit-app.com",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "image": "/cobuildr.png",
+        "href": "https://cobuildr.lovable.app",
+        "title": "CoBuildr",
+        "description": "Your AI product manager companion for non-technical solopreneurs. Build the right product, not just any product.",
+        "tags": ["Vite", "Tailwind CSS", "Vercel", "Resend", "Supabase"],
+        "links": [
+            {
+                "name": "Website",
+                "href": "https://cobuildr.lovable.app",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "image": "/diego-basto-io.png",
+        "href": "/",
+        "title": "diego-basto.me",
+        "description": "Minimalist, aesthetic, and lighting fast personal portfolio website to showcase a bit about me and my work.",
+        "tags": ["NextJS", "Tailwind CSS", "Vercel"],
+        "links": [
+            {
+                "name": "GitHub",
+                "href": "https://github.com/diego-basto-piamonte/diego-basto.io",
                 "icon": "fas fa-external-link-alt"
             }
         ]

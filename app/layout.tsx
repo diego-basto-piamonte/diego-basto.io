@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import { MouseGlow } from "@/components/mouse-glow";
 import Providers from "@/components/providers";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body className="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-family antialiased">
                 <Providers>
+                    <MouseGlow />
                     <Header />
                     <main className="grow">{children}</main>
                     <Chat />
