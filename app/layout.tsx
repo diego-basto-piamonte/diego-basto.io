@@ -28,7 +28,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
             <body className="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-family antialiased">
                 <Providers>
                     <MouseGlow />

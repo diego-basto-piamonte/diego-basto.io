@@ -31,7 +31,7 @@ export default function Header(){
     const pathname = usePathname();
 
     return (
-        <header className="sticky top-0 z-50 bg-transparent py-6">
+        <header className="sticky top-0 z-50 relative py-6 before:absolute before:inset-0 before:-mx-[50vw] before:bg-background/80 before:backdrop-blur-sm before:-z-10 before:content-['']">
             <nav className="flex items-center justify-between">
                 <ul className="flex gap-4 sm:gap-8">
                     {navLinks.map((nav, id) => (
