@@ -1,5 +1,44 @@
 [
     {
+        "name": "CoBuildr",
+        "href": "https://cobuildr.app",
+        "title": "Founder",
+        "logo": "./cobuildr.jpeg",
+        "start": "Mar 2026",
+        "end": "Present",
+        "description": [
+            "Building CoBuildr – an AI-powered companion that guides solopreneurs and vibe coders from raw idea to validated, scoped product, addressing the gap where building software has become easy but building the right thing remains hard.",
+            "Developing a full-stack product with LLM-powered workflows in an AI-native environment, targeting first commit to launch in under three weeks."
+        ],
+        "links": [
+            {
+                "name": "CoBuildr",
+                "href": "https://cobuildr.app",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
+        "name": "SEND IT",
+        "href": "https://sendit-app.com",
+        "title": "Founder",
+        "logo": "./sendit.png",
+        "start": "Feb 2026",
+        "end": "Present",
+        "description": [
+            "Built and launched SEND IT, a free-to-play social Formula 1 tipping web app where users pick head-to-head driver matchups, participate in public and private leagues, and play against their mates.",
+            "Acquired 90+ users, 1,300+ tips, and 15+ leagues within two weeks of launch through organic growth alone.",
+            "Developing in an AI-native environment, going from first commit to launch in under 2 weeks."
+        ],
+        "links": [
+            {
+                "name": "SEND IT",
+                "href": "https://sendit-app.com",
+                "icon": "fas fa-external-link-alt"
+            }
+        ]
+    },
+    {
         "name": "Visagio",
         "href": "https://visagio.com/en/home/",
         "title": "Intern → Consultant → Senior Consultant / Product Manager",
@@ -8,33 +47,15 @@
         "end": "Present",
         "description": [
             "Led cross-functional teams to deliver 10+ high-impact digital products to clients across natural resources, oil & gas, and insurance sectors in APAC.",
-            "Led the development and implementation of a supply chain planning web application, delivering an estimated $17.5M AUD EBITDA uplift by optimising production and maintenance plans.",
-            "Led the development and implementation of a train driver resource allocation proof-of-concept application, cutting driver wait times by 40% at a remote mining port.",
-            "Led a first-of-its-kind management system implementation project in Singapore, successfully establishing a strong partnership that has spanned 2+ years and involved 30+ consultants.",
-            "Led the development of an internal innovation management application, increasing active users from 20 to 300+ after a successful deployment."
+            "As a product portfolio manager, supporting the management of a $200M USD digital transformation portfolio, driving delivery excellence and value realisation.",
+            "As a product manager, led a supply chain planning product suite delivering $17.5M AUD EBITDA uplift; managed a hybrid team of 6+ including BAs, developers, and testers.",
+            "As a product developer, built and deployed operational apps across WA mining sites, achieving >95% reduction in manual effort (commentary collector) and 40% cut in driver wait times (resource allocator).",
+            "Supported business transformation for a cable manufacturer, unlocking $11.8M AUD EBITDA (38% increase) via pricing and inventory optimisation."
         ],
         "links": [
             {
                 "name": "Visagio",
                 "href": "https://visagio.com/en/home/",
-                "icon": "fas fa-external-link-alt"
-            }
-        ]
-    },
-    {
-        "name": "v(dev), a Visagio Company",
-        "href": "https://visagio.com/en/vdev/",
-        "title": "Analyst → Product Lead",
-        "logo": "./v(dev).png",
-        "start": "Jul 2023",
-        "end": "Jun 2025",
-        "description": [
-            "Currently leading the productification workstream, converting successful product-related consulting success stories to fit-for-purpose digital products."
-        ],
-        "links": [
-            {
-                "name": "v(dev)",
-                "href": "https://visagio.com/en/vdev/",
                 "icon": "fas fa-external-link-alt"
             }
         ]

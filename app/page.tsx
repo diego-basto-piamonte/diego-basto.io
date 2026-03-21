@@ -36,7 +36,7 @@ export default function Home() {
                         <b>A bit about Diego</b>
                         <ul className="list-disc list-inside ml-4 space-y-1">
                             <li>25-year-old tech enthusiast from Australia 🇦🇺 </li>
-                            <li>5+ years experience in tech consulting</li>
+                            <li>5+ years experience in product</li>
                             <li>10+ digital products delivered to clients</li>
                         </ul>
                     </div>
