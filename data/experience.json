@@ -4,6 +4,7 @@
         "href": "https://cobuildr.app",
         "title": "Founder",
         "logo": "./cobuildr.jpeg",
+        "logoClassName": "scale-75",
         "start": "Mar 2026",
         "end": "Present",
         "description": [

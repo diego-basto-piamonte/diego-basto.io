@@ -84,7 +84,7 @@ const ChatIcon = ({ openChat, isOpen }: { openChat: () => void; isOpen: boolean 
 const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
     const [input, setInput] = useState('');
 
-    const { messages, sendMessage, status } = useChat({
+    const { messages, sendMessage, status, error } = useChat({
         id: 'tech-support',
         messages: chatHistory,
     });
@@ -176,6 +176,16 @@ const ChatWindow = ({ closeChat }: { closeChat: () => void }) => {
                             <span className="w-2 h-2 rounded-full bg-muted-foreground/50 animate-bounce [animation-delay:0ms]" />
                             <span className="w-2 h-2 rounded-full bg-muted-foreground/50 animate-bounce [animation-delay:150ms]" />
                             <span className="w-2 h-2 rounded-full bg-muted-foreground/50 animate-bounce [animation-delay:300ms]" />
+                        </div>
+                    </div>
+                )}
+                {error && (
+                    <div className="flex gap-3 justify-start">
+                        <div className="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center">
+                            <Bot className="w-5 h-5 text-primary-foreground" />
+                        </div>
+                        <div className="rounded-lg px-4 py-2 max-w-xs md:max-w-sm bg-destructive/10 text-destructive text-sm">
+                            Sorry, I couldn&apos;t get a response. Please try again.
                         </div>
                     </div>
                 )}

@@ -11,10 +11,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Typewriter from "@/components/typewriter";
 import { Button } from "@/components/ui/button";
 import { useChatStore } from "./context/ChatStore";
+import { calculateAge } from "@/lib/utils";
 
 export default function Home() {
 
     const { toggleChat } = useChatStore();
+    const age = calculateAge('2000-04-08');
 
     return (
         <article className="mt-8 flex flex-col gap-8 pb-8 w-100">
@@ -35,7 +37,7 @@ export default function Home() {
                     <div className="mt-4 font-light space-y-2">
                         <b>A bit about Diego</b>
                         <ul className="list-disc list-inside ml-4 space-y-1">
-                            <li>25-year-old tech enthusiast from Australia 🇦🇺 </li>
+                            <li>{age}-year-old tech enthusiast from Australia 🇦🇺 </li>
                             <li>5+ years experience in product</li>
                             <li>10+ digital products delivered to clients</li>
                         </ul>

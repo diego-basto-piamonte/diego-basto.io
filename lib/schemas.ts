@@ -11,6 +11,7 @@ const ExperienceSchema = z.object({
     href: z.string().url(),
     title: z.string(),
     logo: z.string(),
+    logoClassName: z.string().optional(),
     start: z.string(),
     end: z.string().nullable(),
     description: z.array(z.string()),

@@ -3,13 +3,14 @@ import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { ArrowUpRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface Props {
   experience: Experience;
 }
 
 export default function TimelineItem({ experience }: Props) {
-  const { name, href, title, logo, start, end, description, links } =
+  const { name, href, title, logo, logoClassName, start, end, description, links } =
     experience;
 
     // const result = ExperienceSchema.safeParse(experience); 
@@ -25,7 +26,7 @@ return (
                     <AvatarImage
                         src={logo}
                         alt={name}
-                        className="bg-background object-contain"
+                        className={cn("bg-background object-contain", logoClassName)}
                     />
                 <AvatarFallback>{name[0]}</AvatarFallback>
             </Avatar>

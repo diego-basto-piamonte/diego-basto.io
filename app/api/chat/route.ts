@@ -70,11 +70,16 @@ export async function POST(req: Request) {
     const { messages }: { messages: UIMessage[] } = await req.json();
 
     const result = streamText({
-        model: openrouter.chat('stepfun/step-3.5-flash:free'),
+        model: openrouter.chat('google/gemma-4-31b-it:free'),
         system: buildSystemPrompt(),
         messages: convertToModelMessages(messages),
         experimental_transform: smoothStream(),
     });
 
-    return result.toUIMessageStreamResponse();
+    return result.toUIMessageStreamResponse({
+        onError: (error) => {
+            console.error('[api/chat] stream error:', error);
+            return error instanceof Error ? error.message : 'Something went wrong.';
+        },
+    });
 }
